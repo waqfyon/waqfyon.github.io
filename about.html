@@ -3,7 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google tag (gtag.js) -->
+  <title>من نحن - وقفيون</title>
+  <meta name="description" content="تعرف على منصة وقفيون - منصة استثمارية وقفية رقمية مبتكرة، حلول متوافقة مع الشريعة لتنمية أموال الأوقاف">
+  <meta name="keywords" content="وقف، استثمار وقفي، منصة وقفية، حلول وقفية، عن وقفيون">
+  <meta property="og:title" content="من نحن - وقفيون">
+  <meta property="og:description" content="تعرف على منصة وقفيون - منصة استثمارية وقفية رقمية مبتكرة، حلول متوافقة مع الشريعة لتنمية أموال الأوقاف">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap RTL CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts - Arabic -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53DVXMJCTS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,148 +30,139 @@
 
   gtag('config', 'G-53DVXMJCTS');
 </script>
-  <title>من نحن - وقفيون</title>
-  <!-- Bootstrap RTL CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Google Fonts - Arabic -->
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
- 
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<body class="sketch-style">
+  <!-- Header with Bootstrap Navbar -->
+  <header class="fixed-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.svg" alt="Bootstrap" width="174.5" height="58">
+          <img src="assets/images/brand/logo.svg" alt="وقفيون" width="120" height="40" class="d-inline-block align-top">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="index.html">الرئيسية</a>
+              <a class="nav-link" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" href="about.html">من نحن</a>
+              <a class="nav-link active" aria-current="page" href="about.html">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="app.html">جرب تطبيقنا</a>
+              <a class="nav-link" href="app.html">التطبيق</a>
             </li>
           </ul>
           
+          <div class="d-flex">
+            <a href="contact.html" class="btn btn-outline-success me-2">تواصل معنا</a>
+            <a href="app.html" class="btn btn-success">جرب الآن</a>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Page Hero Banner -->
-  <section class="page-banner py-5 bg-navy text-white">
+  <!-- About Hero Section -->
+  <section class="sketch-hero-about">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h1 class="display-4 fw-bold">من نحن</h1>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center">
-              <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">الرئيسية</a></li>
-              <li class="breadcrumb-item active text-gold" aria-current="page">من نحن</li>
-            </ol>
-          </nav>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-end" data-aos="fade-up">
+          <span class="sketch-tag mb-4">تعرف علينا</span>
+          <h1 class="sketch-hero-title">
+            نحن <span class="highlight">وقفيون</span><br class="d-none d-lg-block"> منصة الاستثمار الوقفي
+          </h1>
+          <p class="sketch-hero-text mt-3">
+            نعمل على تمكين وتنمية الأوقاف عبر توفير حلول استثمارية متوافقة مع الشريعة الإسلامية وتقديم منصة رقمية مبتكرة تربط بين الواقفين وفرص الاستثمار
+          </p>
+        </div>
+        <div class="sketch-hero-image-about col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/brand/about-hero.png" alt="فريق وقفيون" class=" ">
         </div>
       </div>
     </div>
   </section>
   
-  <!-- About Section -->
+  <!-- Our Mission Section -->
   <section class="py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="position-relative">
-            <img src="assets\images\about-hero.png" alt="صورة عن وقفيون" class="img-fluid rounded-4 shadow">
-          </div>
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
+          <img src="assets/images/brand/about-body.png" alt="مهمتنا" class="img-fluid rounded-3 shadow-sm">
         </div>
-        <div class="col-lg-6">
-          <span class="badge bg-gold text-dark px-3 py-2 rounded-pill mb-3">قصتنا</span>
-          <h2 class="display-5 fw-bold mb-4">رحلتنا في <span class="text-gold">وقفيون</span></h2>
-          <p class="lead">نحن شركة متخصصة في إدارة وتنمية الأوقاف وتقديم الحلول الاستثمارية المتوافقة مع الشريعة الإسلامية.</p>
-          <p> بهدف إحداث نقلة نوعية في قطاع الأوقاف من خلال توظيف التقنيات الحديثة والخبرات المتراكمة لتحقيق أعلى عوائد ممكنة مع الالتزام التام بالضوابط الشرعية.</p>
-          <div class="mt-4">
-            <div class="row g-3">
-              <div class="col-6 col-md-4">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-users text-gold fs-3"></i>
-                  <div class="ms-3">
-                    <h4 class="h2 fw-bold mb-0">١٠٠٠+</h4>
-                    <p class="mb-0">عميل سعيد متوقع</p>
-                  </div>
-                </div>
+        <div class="col-lg-5 offset-lg-1" data-aos="fade-right">
+          <span class="sketch-tag mb-3">رؤيتنا ورسالتنا</span>
+          <h2 class="sketch-section-title">نبني مستقبل الاستثمار الوقفي</h2>
+          <p class="sketch-section-text mb-4">
+            نسعى لأن نكون المنصة الرائدة في مجال الاستثمار الوقفي على مستوى المملكة العربية السعودية والعالم العربي، من خلال توفير حلول مبتكرة تسهم في تنمية الأوقاف وزيادة أثرها الاجتماعي والاقتصادي.
+          </p>
+          
+          <div class="sketch-mission-points">
+            <div class="sketch-mission-point mb-3">
+              <div class="sketch-mission-icon">
+                <i class="fas fa-check"></i>
               </div>
-              <div class="col-6 col-md-4">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-money-bill-wave text-gold fs-3"></i>
-                  <div class="ms-3">
-                    <h4 class="h2 fw-bold mb-0">١٠٠</h4>
-                    <p class="mb-0">مليون ريال متوقع</p>
-                  </div>
-                </div>
+              <p>تقديم حلول استثمارية متوافقة مع الشريعة الإسلامية</p>
+            </div>
+            
+            <div class="sketch-mission-point mb-3">
+              <div class="sketch-mission-icon">
+                <i class="fas fa-check"></i>
               </div>
+              <p>تسهيل وصول الواقفين إلى فرص استثمارية متنوعة</p>
+            </div>
+            
+            <div class="sketch-mission-point">
+              <div class="sketch-mission-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <p>زيادة الأثر التنموي والاجتماعي للأوقاف</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Our Values Section -->
-  <section class="py-5 bg-light">
+  <section class="sketch-features py-5">
     <div class="container">
-      <div class="text-center mb-5">
-        <span class="badge bg-gold text-dark px-3 py-2 rounded-pill mb-3">قيمنا</span>
-        <h2 class="display-5 fw-bold">المبادئ التي <span class="text-gold">تحركنا</span></h2>
-        <p class="lead w-75 mx-auto">نؤمن بقيم راسخة تقود خطواتنا وتشكل هويتنا في وقفيون</p>
+      <div class="sketch-section-title-container text-center">
+        <h2 class="sketch-section-title" data-aos="fade-up">قيمنا</h2>
+        <p class="sketch-section-subtitle" data-aos="fade-up" data-aos-delay="100">المبادئ التي توجه عملنا كل يوم</p>
       </div>
       
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white text-center">
-            <div class="value-icon mb-4 bg-light-gold rounded-circle p-3 mx-auto d-inline-flex">
-              <i class="fas fa-balance-scale text-gold fs-3"></i>
+      <div class="row g-4 mt-3">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="sketch-feature-card text-center">
+            <div class="sketch-feature-icon mx-auto">
+              <i class="fas fa-balance-scale"></i>
             </div>
-            <h3 class="h4 fw-bold">النزاهة</h3>
-            <p class="text-muted">نلتزم بأعلى معايير الشفافية والنزاهة في جميع تعاملاتنا.</p>
+            <h3 class="sketch-feature-title">الالتزام الشرعي</h3>
+            <p class="sketch-feature-text">نلتزم بضوابط الشريعة الإسلامية في جميع معاملاتنا واستثماراتنا.</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white text-center">
-            <div class="value-icon mb-4 bg-light-gold rounded-circle p-3 mx-auto d-inline-flex">
-              <i class="fas fa-lightbulb text-gold fs-3"></i>
+        
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="sketch-feature-card text-center">
+            <div class="sketch-feature-icon mx-auto">
+              <i class="fas fa-lightbulb"></i>
             </div>
-            <h3 class="h4 fw-bold">الابتكار</h3>
-            <p class="text-muted">نسعى دائمًا لابتكار حلول مالية مبتكرة تلبي احتياجات عملائنا المتنوعة.</p>
+            <h3 class="sketch-feature-title">الابتكار</h3>
+            <p class="sketch-feature-text">نسعى دائماً لتقديم حلول مبتكرة لتطوير قطاع الأوقاف وتعزيز نموه.</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white text-center">
-            <div class="value-icon mb-4 bg-light-gold rounded-circle p-3 mx-auto d-inline-flex">
-              <i class="fas fa-star text-gold fs-3"></i>
+        
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="sketch-feature-card text-center">
+            <div class="sketch-feature-icon mx-auto">
+              <i class="fas fa-hands-helping"></i>
             </div>
-            <h3 class="h4 fw-bold">رضا العملاء</h3>
-            <p class="text-muted">نضع عملاءنا في قلب كل ما نقوم به، ونسعى لتقديم تجربة استثنائية.</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="value-card p-4 rounded-4 shadow-sm h-100 bg-white text-center">
-            <div class="value-icon mb-4 bg-light-gold rounded-circle p-3 mx-auto d-inline-flex">
-              <i class="fas fa-handshake text-gold fs-3"></i>
-            </div>
-            <h3 class="h4 fw-bold">العمل الجماعي</h3>
-            <p class="text-muted">نعمل كفريق واحد لتحقيق أهداف عملائنا وتطلعات مجتمعنا.</p>
+            <h3 class="sketch-feature-title">الشفافية</h3>
+            <p class="sketch-feature-text">نؤمن بأهمية الشفافية في التعامل مع عملائنا وشركائنا وأصحاب المصلحة.</p>
           </div>
         </div>
       </div>
@@ -163,130 +172,260 @@
   <!-- Team Section -->
   <section class="py-5">
     <div class="container">
-      <div class="text-center mb-5">
-        <span class="badge bg-gold text-dark px-3 py-2 rounded-pill mb-3">فريقنا</span>
-        <h2 class="display-5 fw-bold">فريق <span class="text-gold">وقفيون</span> المتميز</h2>
-        <p class="lead w-75 mx-auto">نفتخر بفريقنا المتخصص من المستشارين الماليين وخبراء الاستثمار الوقفي</p>
+      <div class="sketch-section-title-container text-center">
+        <h2 class="sketch-section-title" data-aos="fade-up">فريقنا</h2>
+        <p class="sketch-section-subtitle" data-aos="fade-up" data-aos-delay="100">خبراء متخصصون في مجال الاستثمار الوقفي</p>
       </div>
       
-      <div class="row g-11">
-        <div class="col-md-1"></div>
-        <div class="col-md-2">
-          <div class="team-member text-center">
-            <div class="position-relative mb-3">
-                <img src="assets/images/team-1.jpeg" alt="عضو الفريق" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-              <div class="social-links position-absolute w-100 d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/abdullah-albarakati/" class="mx-1"><i class="fab fa-linkedin"></i></a>
-              </div>
+      <div class="row g-4 mt-3 justify-content-center">
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="sketch-team-card text-center h-100">
+            <div class="sketch-team-image mx-auto">
+              <img src="assets/images/team/team-1.jpeg" alt="عبدالله البركاتي" class="img-fluid rounded-circle team-member-img">
             </div>
-            <h3 class="h5 fw-bold">عبدالله البركاتي</h3>
-            <p class="text-gold">مسؤول كتابة المحتوى</p>
+            <h4 class="sketch-team-name mt-4">عبدالله البركاتي</h4>
+            <p class="sketch-team-position">رئيس قسم كتابة المحتوى</p>
+            <div class="sketch-team-social mt-3">
+              <a href="https://www.linkedin.com/in/abdullah-albarakati/" class="sketch-team-social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <div class="team-member text-center">
-            <div class="position-relative mb-3">
-              <img src="assets/images/team-2.jpeg" alt="عضو الفريق" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-              <div class="social-links position-absolute w-100 d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/fahd-aljudaibi" class="mx-1"><i class="fab fa-linkedin"></i></a>
-              </div>
+        
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <div class="sketch-team-card text-center h-100">
+            <div class="sketch-team-image mx-auto">
+              <img src="assets/images/team/team-2.jpeg" alt="فهد الجديبي" class="img-fluid rounded-circle team-member-img">
             </div>
-            <h3 class="h5 fw-bold">فهد الجديبي</h3>
-            <p class="text-gold">مسؤول الابداع والابتكار</p>
+            <h4 class="sketch-team-name mt-4">فهد الجديبي</h4>
+            <p class="sketch-team-position">رئيس قسم الإبداع والإبتكار</p>
+            <div class="sketch-team-social mt-3">
+              <a href="https://www.linkedin.com/in/fahd-aljudaibi" class="sketch-team-social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <div class="team-member text-center">
-            <div class="position-relative mb-3">
-              <img src="assets/images/team-3.jpg" alt="عضو الفريق" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-              <div class="social-links position-absolute w-100 d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/khalid-albishi-72a65824b/" class="mx-1"><i class="fab fa-linkedin"></i></a>
-              </div>
+        
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+          <div class="sketch-team-card text-center h-100">
+            <div class="sketch-team-image mx-auto">
+              <img src="assets/images/team/team-3.jpg" alt="خالد العتيبي" class="img-fluid rounded-circle team-member-img">
             </div>
-            <h3 class="h5 fw-bold">خالد العتيبي</h3>
-            <p class="text-gold">مسؤول الواجهات وتجربة المستخدم</p>
+            <h4 class="sketch-team-name mt-4">خالد العتيبي</h4>
+            <p class="sketch-team-position">رئيس تجربة العميل والتفاعل الرقمي</p>
+            <div class="sketch-team-social mt-3">
+              <a href="https://www.linkedin.com/in/khalid-albishi-72a65824b/" class="sketch-team-social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <div class="team-member text-center">
-            <div class="position-relative mb-3">
-              <img src="assets/images/team-4.jpg" alt="عضو الفريق" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-              <div class="social-links position-absolute w-100 d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/joud-bahkali-7656b6326" class="mx-1"><i class="fab fa-linkedin"></i></a>
-              </div>
+        
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+          <div class="sketch-team-card text-center h-100">
+            <div class="sketch-team-image mx-auto">
+              <img src="assets/images/team/team-4.jpg" alt="جود بهكلي" class="img-fluid rounded-circle team-member-img">
             </div>
-            <h3 class="h5 fw-bold">جود بهكلي</h3>
-            <p class="text-gold">مسؤولة هندسة البرمجيات وتحليل الأداء</p>
+            <h4 class="sketch-team-name mt-4">جود بهكلي</h4>
+            <p class="sketch-team-position">رئيسة قسم تطوير البرمجيات</p>
+            <div class="sketch-team-social mt-3">
+              <a href="https://www.linkedin.com/in/joud-bahkali-7656b6326" class="sketch-team-social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <div class="team-member text-center">
-            <div class="position-relative mb-3">
-              <img src="assets/images/team-5.jpg" alt="عضو الفريق" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-              <div class="social-links position-absolute w-100 d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/jana-alhebshi-3aa276262" class="mx-1"><i class="fab fa-linkedin"></i></a>
-              </div>
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+          <div class="sketch-team-card text-center h-100">
+            <div class="sketch-team-image mx-auto">
+              <img src="assets/images/team/team-5.jpg" alt="جنى الحبشي" class="img-fluid rounded-circle team-member-img">
             </div>
-            <h3 class="h5 fw-bold">جنى الحبشي</h3>
-            <p class="text-gold">مسؤولة الامن السيبراني والاحصائيات المالية</p>
+            <h4 class="sketch-team-name mt-4">جنى الحبشي</h4>
+            <p class="sketch-team-position">رئيسة وحدة حماية البيانات</p>
+            <div class="sketch-team-social mt-3">
+              <a href="https://www.linkedin.com/in/jana-alhebshi-3aa276262" class="sketch-team-social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- CTA Section -->
-  <section class="cta py-5 bg-gold">
+  
+  <!-- FAQ Section -->
+  <section class="py-5 sketch-features">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8 mb-4 mb-lg-0">
-          <h2 class="fw-bold text-navy mb-2">مهتم لتطبيقنا الوعد؟</h2>
-          <p class="lead text-dark mb-0">يمكنك التواصل معنا والتعرف على حلولنا المبتكرة</p>
-        </div>
-        <div class="col-lg-4 text-lg-start">
-          <a href="mailto:waqfyon@gmail.com" class="btn btn-dark btn-lg px-4 py-3">تواصل معنا<i class="fas fa-arrow-left ms-2"></i></a>
+      <div class="sketch-section-title-container text-center">
+        <h2 class="sketch-section-title" data-aos="fade-up">الأسئلة الشائعة</h2>
+        <p class="sketch-section-subtitle" data-aos="fade-up" data-aos-delay="100">إجابات عن أكثر الأسئلة شيوعاً حول خدماتنا</p>
+      </div>
+      
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-lg-10 mx-auto">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ما هو الاستثمار الوقفي؟
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  الاستثمار الوقفي هو استثمار الأموال الموقوفة في مشاريع وأصول مختلفة بهدف تنمية رأس المال واستدامة العوائد التي تصرف في الأغراض التي حددها الواقفون. يتميز الاستثمار الوقفي بالالتزام بالضوابط الشرعية والتوجه نحو الاستثمارات طويلة الأجل.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  كيف يمكنني البدء في الاستثمار مع وقفيون؟
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  يمكنك البدء في الاستثمار مع وقفيون من خلال إنشاء حساب على منصتنا الرقمية أو تطبيقنا، ثم اختيار الفرص الاستثمارية التي تناسب اهتماماتك وأهدافك، وتحديد مبلغ الاستثمار الذي ترغب في تخصيصه. فريقنا جاهز لمساعدتك في كل خطوة من رحلة الاستثمار.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  هل استثمارات وقفيون متوافقة مع الشريعة الإسلامية؟
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  نعم، جميع استثمارات وقفيون متوافقة بشكل كامل مع أحكام الشريعة الإسلامية. لدينا هيئة شرعية متخصصة تراجع جميع المعاملات والاستثمارات للتأكد من توافقها مع الضوابط الشرعية، كما نلتزم بمعايير هيئة المحاسبة والمراجعة للمؤسسات المالية الإسلامية (AAOIFI).
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+  
+  <!-- CTA Section -->
+  <section class="sketch-cta">
+    <div class="container">
+      <div class="sketch-cta-card" data-aos="fade-up">
+        <h2 class="sketch-cta-title">هل أنت مستعد للانضمام إلينا؟</h2>
+        <p class="sketch-cta-text">انضم إلى منصة وقفيون اليوم وشارك في بناء مستقبل مستدام للأوقاف</p>
+        <div class="sketch-cta-actions">
+          <div class="px-3">
+            <a href="app.html" class="sketch-primary-button d-block">جرب الآن</a>
+          </div>
+          <div class="px-3">
+            <a href="mailto:waqfyon@gmail.com" class="sketch-secondary-button d-block">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Footer -->
-  <footer>
+  <footer class="sketch-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <h5>عن وقفيون</h5>
-          <p>نقدم خدمات استثمارية وقفية موثوقة، نساعد الأفراد والمؤسسات على تحقيق أهدافهم المجتمعية والتنموية.</p>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <a href="index.html" class="d-inline-block mb-4">
+            <img src="assets/images/brand/logo.svg" alt="وقفيون" width="120">
+          </a>
+          <p class="sketch-footer-text">نقدم خدمات استثمارية وقفية موثوقة، نساعد الأفراد والمؤسسات على تحقيق أهدافهم المجتمعية والتنموية.</p>
+          <div class="sketch-social mt-4">
+            <a href="https://twitter.com/waqfyon" class="sketch-social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/waqfyon" class="sketch-social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/waqfyon-وقفيون" class="sketch-social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-          <h5>روابط سريعة</h5>
-          <ul>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+          <h5 class="sketch-footer-heading">روابط سريعة</h5>
+          <ul class="sketch-footer-links">
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="about.html">من نحن</a></li>
-            <li><a href="app.html"> جرب تطبيقنا</a></li>
+            <li><a href="app.html">التطبيق</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-4">
-          <h5>اتصل بنا</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-map-marker-alt me-2 text-gold"></i>صنع في جدة</li>
-            <li><i class="fas fa-envelope me-2 text-gold"></i>waqfyon@gmail.com</li>
+        <div class="col-md-4 col-lg-3">
+          <h5 class="sketch-footer-heading">تواصل معنا</h5>
+          <ul class="sketch-footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>جدة، المملكة العربية السعودية</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:waqfyon@gmail.com">waqfyon@gmail.com</a>
+            </li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom mt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="mb-0">&copy; ٢٠٢٥ وقفيون. جميع الحقوق محفوظة.</p>
+          <div class="sketch-app-badges mt-4">
+            <a href="https://apps.apple.com/yourapp" class="sketch-app-badge">
+              <img src="assets/images/Download_on_the_App_Store_Badge_AR_RGB_blk_102417.svg" alt="تحميل من App Store">
+            </a>
+            <a href="#" class="sketch-app-badge">
+              <img src="assets/images/GetItOnGooglePlay_Badge_Web_color_Arabic.png" alt="تحميل من Google Play">
+            </a>
           </div>
         </div>
       </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0"> 
+        </div>
+      
+      <div class="sketch-footer-bottom">
+        <p class="sketch-copyright">© ٢٠٢٥ وقفيون. جميع الحقوق محفوظة.</p>
+        <div class="sketch-footer-legal">
+          <a href="privacy-policy.html">سياسة الخصوصية</a>
+          <a></a>
+          <a href="terms-of-service.html">شروط الخدمة</a>
+        </div>
+      </div>
     </div>
+
+    <a href="#" class="sketch-back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+        <path d="M8 3.33337L8 12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M3.33333 8.00004L8 3.33337L12.6667 8.00004" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </footer>
-  
+
   <!-- Bootstrap & JavaScript Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        disable: window.innerWidth < 768
+      });
+      
+      // Header scroll effect
+      const header = document.querySelector('.navbar');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Back to top button
+      const backToTopButton = document.getElementById('backToTop');
+      
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>

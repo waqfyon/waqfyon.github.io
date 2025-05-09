@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>النموذج الأولي لتطبيق وقفيون</title>
+  <title>تطبيق وقفيون - منصة الاستثمار الوقفي المبتكرة</title>
+  <meta name="description" content="تطبيق وقفيون - استثمر في المشاريع الوقفية بسهولة عبر تطبيقنا المبتكر">
+  <meta name="keywords" content="وقف، استثمار وقفي، تطبيق وقفي، حلول وقفية، تطبيق جوال">
+  <meta property="og:title" content="تطبيق وقفيون - منصة الاستثمار الوقفي المبتكرة">
+  <meta property="og:description" content="تطبيق وقفيون - استثمر في المشاريع الوقفية بسهولة عبر تطبيقنا المبتكر">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!-- Bootstrap RTL CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Google Fonts - Arabic -->
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- App Page Specific CSS -->
   <link rel="stylesheet" href="assets/css/app.css">
-  <!-- Google tag (gtag.js) -->
+   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53DVXMJCTS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -22,192 +32,362 @@
 
   gtag('config', 'G-53DVXMJCTS');
 </script>
-   
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<body class="sketch-style">
+  <!-- Header with Bootstrap Navbar -->
+  <header class="fixed-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.svg" alt="Bootstrap" width="174.5" height="58">
+          <img src="assets/images/brand/logo.svg" alt="وقفيون" width="120" height="40" class="d-inline-block align-top">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="index.html">الرئيسية</a>
+              <a class="nav-link" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="about.html">من نحن</a>
+              <a class="nav-link" href="about.html">من نحن</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active fw-bold" href="app.html">جرب تطبيقنا</a>
-              </li>
+              <a class="nav-link active" aria-current="page" href="app.html">التطبيق</a>
+            </li>
           </ul>
           
+          <div class="d-flex">
+            <a href="contact.html" class="btn btn-outline-success me-2">تواصل معنا</a>
+            <a href="app.html" class="btn btn-success">جرب الآن</a>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Page Hero Banner -->
-  <section class="page-banner py-5 bg-navy text-white">
+  <!-- App Hero Section -->
+  <section class="sketch-hero">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h1 class="display-4 fw-bold">تطبيق <span class="text-gold">وقفيون</span></h1>
-          <p class="lead">استكشف النموذج الأولي لتطبيق وقفيون للاستثمار الوقفي</p>
+      <div class="row align-items-center py-lg-5">
+        <div class="col-lg-6 text-center text-lg-end" data-aos="fade-up">
+          <span class="sketch-tag mb-4">تطبيقنا الذكي</span>
+          <h1 class="sketch-hero-title">
+            استثمر في الأوقاف من <span class="highlight">هاتفك</span><br class="d-none d-lg-block"> بكل سهولة
+          </h1>
+          <p class="sketch-hero-text mt-3">
+            قم بإدارة استثماراتك الوقفية في أي وقت وأي مكان من خلال تطبيق وقفيون المتميز بواجهة سهلة الاستخدام ومزايا متطورة
+          </p>
+          <div class="sketch-hero-actions mt-5">
+            <div class="row g-3">
+                <div class="sketch-app-badges col-sm-6">
+                <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#appLaunchModal">
+                  <img src="assets/images/Download_on_the_App_Store_Badge_AR_RGB_blk_102417.svg" alt="تحميل من App Store" class="img-fluid app-store-badge">
+                </a>
+                </div>
+                <div class="sketch-app-badges col-sm-6">
+                <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#appLaunchModal">
+                  <img src="assets/images/GetItOnGooglePlay_Badge_Web_color_Arabic.png" alt="تحميل من Google Play" class="img-fluid google-play-badge">
+                </a>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="sketch-app-showcase">
+            <img src="assets/images/brand/app-hero.png" alt="تطبيق وقفيون" class="img-fluid app-main-mockup">
+            <div class="sketch-blob"></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   
+  <!-- App Features Section -->
   <section class="py-5">
     <div class="container">
-      <div class="app-prototype">
-        <div class="instructions">
+      <div class="sketch-section-title-container text-center">
+        <h2 class="sketch-section-title" data-aos="fade-up">خصائص التطبيق</h2>
+        <p class="sketch-section-subtitle" data-aos="fade-up" data-aos-delay="100">تجربة مستخدم فريدة مع مجموعة من المميزات الحصرية</p>
+      </div>
+      
+      <div class="row g-5 mt-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="sketch-feature-card text-center h-100">
+            <div class="sketch-feature-icon mx-auto">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3 class="sketch-feature-title">لوحة تحكم ذكية</h3>
+            <p class="sketch-feature-text">متابعة أداء استثماراتك الوقفية بسهولة من خلال لوحة تحكم تفاعلية توضح جميع البيانات والإحصاءات.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="sketch-feature-card text-center h-100">
+            <div class="sketch-feature-icon mx-auto">
+              <i class="fas fa-bell"></i>
+            </div>
+            <h3 class="sketch-feature-title">إشعارات فورية</h3>
+            <p class="sketch-feature-text">استلام إشعارات فورية حول الفرص الاستثمارية الجديدة والتحديثات الخاصة باستثماراتك الحالية.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="sketch-feature-card text-center h-100">
+            <div class="sketch-feature-icon mx-auto">
+              <i class="fas fa-file-invoice"></i>
+            </div>
+            <h3 class="sketch-feature-title">تقارير مفصلة</h3>
+            <p class="sketch-feature-text">الحصول على تقارير مفصلة عن أداء استثماراتك الوقفية وتحليلات دقيقة للعوائد والمخاطر.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- App Prototype Section -->
+  <section class="sketch-features py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-left">
+          <div class="sketch-app-screenshots">
+            <img src="assets/images/app-screen-1.png" class="sketch-app-screen screen-1" alt="شاشة التطبيق">
+            <img src="assets/images/app-screen-2.png" class="sketch-app-screen screen-2" alt="شاشة التطبيق">
+            <div class="sketch-blob app-blob"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1" data-aos="fade-right">
+          <span class="sketch-tag mb-3">نموذج أولي</span>
+          <h2 class="sketch-section-title">تجربة المستخدم المتميزة</h2>
+          <p class="sketch-section-text mb-4">
+            صممنا واجهة تطبيق وقفيون لتكون سهلة الاستخدام وبديهية، تمكنك من الوصول إلى جميع الخدمات بسرعة وسهولة.
+          </p>
+          
+          <div class="sketch-app-feature mb-4">
+            <div class="sketch-app-feature-number">01</div>
+            <div>
+              <h4 class="sketch-app-feature-title">استعراض المشاريع الوقفية</h4>
+              <p class="sketch-app-feature-text">تصفح مجموعة متنوعة من الفرص الاستثمارية الوقفية واطلع على تفاصيلها</p>
+            </div>
+          </div>
+          
+          <div class="sketch-app-feature mb-4">
+            <div class="sketch-app-feature-number">02</div>
+            <div>
+              <h4 class="sketch-app-feature-title">الاستثمار بنقرات بسيطة</h4>
+              <p class="sketch-app-feature-text">استثمر في المشاريع الوقفية المختارة من خلال عملية استثمار سلسة وآمنة</p>
+            </div>
+          </div>
+          
+          <div class="sketch-app-feature">
+            <div class="sketch-app-feature-number">03</div>
+            <div>
+              <h4 class="sketch-app-feature-title">متابعة العوائد والأداء</h4>
+              <p class="sketch-app-feature-text">راقب عوائد استثماراتك وتعرف على أداء محفظتك الاستثمارية في أي وقت</p>
+            </div>
+          </div>
+          
+          <div class="mt-5">
+            <a href="https://www.figma.com/proto/BFspBZL2QyBRCQeaYALb6J/%D9%88%D9%82%D9%81%D9%8A%D9%88%D9%86?node-id=592-1476" target="_blank" class="sketch-primary-button">
+              <i class="fas fa-external-link-alt me-2"></i> جرب النموذج الأولي
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Figma Prototype Embed Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="sketch-section-title-container text-center">
+        <h2 class="sketch-section-title" data-aos="fade-up">تجربة تفاعلية</h2>
+        <p class="sketch-section-subtitle" data-aos="fade-up" data-aos-delay="100">استكشف واجهة التطبيق بشكل تفاعلي</p>
+      </div>
+      
+      <div class="app-prototype mt-5" data-aos="fade-up">
+        <div class="instructions mb-4">
           <div class="row align-items-center">
             <div class="col-md-9">
-              <h3><i class="fas fa-info-circle text-gold me-2"></i> كيفية التفاعل مع النموذج الأولي:</h3>
+              <h5 class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> كيفية التفاعل مع النموذج الأولي:</h5>
               <p class="mb-md-0">هذا نموذج أولي تفاعلي لتطبيق وقفيون مصمم باستخدام Figma. انقر على الشاشات للتنقل بين واجهات التطبيق وتجربة تجربة المستخدم.</p>
             </div>
             <div class="col-md-3 text-md-start mt-3 mt-md-0">
-              <a href="https://www.figma.com/proto/BFspBZL2QyBRCQeaYALb6J/%D9%88%D9%82%D9%81%D9%8A%D9%88%D9%86?node-id=592-1476" target="_blank" class="btn btn-gold px-4">فتح في نافذة جديدة <i class="fas fa-external-link-alt ms-2"></i></a>
+              <a href="https://www.figma.com/proto/BFspBZL2QyBRCQeaYALb6J/%D9%88%D9%82%D9%81%D9%8A%D9%88%D9%86?node-id=592-1476" target="_blank" class="btn btn-primary px-4">فتح في نافذة جديدة <i class="fas fa-external-link-alt ms-2"></i></a>
             </div>
           </div>
         </div>
         
         <!-- Figma Embed Area -->
         <div class="figma-embed">
-          <iframe src="https://embed.figma.com/proto/BFspBZL2QyBRCQeaYALb6J/%D9%88%D9%82%D9%81%D9%8A%D9%88%D9%86?page-id=592%3A1476&node-id=592-1513&p=f&viewport=25%2C-161%2C0.31&scaling=scale-down&content-scaling=fixed&starting-point-node-id=592%3A1513&embed-host=share" allowfullscreen></iframe>
-        </div>
-        
-        <div class="feedback-section">
-          <div class="text-center mb-5">
-            <span class="badge bg-gold text-dark px-3 py-2 rounded-pill mb-3">نرحب بآرائكم</span>
-            <h2 class="display-6 fw-bold">شاركنا <span class="text-gold">رأيك</span></h2>
-            <p class="lead w-75 mx-auto">هذا النموذج الأولي قيد التطوير، وملاحظاتك تساعدنا في تحسينه</p>
-          </div>
-          
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="feedback-card text-center h-100">
-                <div class="mb-6">
-                  <i class="fas fa-star text-gold fa-3x"></i>
-                </div>
-                <h3 class="h4 fw-bold mb-3">قيّم التجربة</h3>
-                <p>شاركنا تقييمك لتجربة التطبيق بعد تصفح النموذج الأولي</p>
-                <div class="mt-3">
-                  <div class="text-gold fs-4">
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="feedback-card text-center h-100">
-                <div class="mb-4">
-                  <i class="fas fa-comment-dots text-gold fa-3x"></i>
-                </div>
-                <h3 class="h4 fw-bold mb-3">أرسل ملاحظاتك</h3>
-                <p>نرحب بملاحظاتك واقتراحاتك لتحسين تجربة المستخدم</p>
-                <a href="mailto:waqfyon@gmail.com" class="btn btn-gold text-white mt-3">إرسال ملاحظات</a>
-              </div>
-            </div>
-    
-          </div>
+          <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBFspBZL2QyBRCQeaYALb6J%2F%25D9%2588%25D9%2582%25D9%2581%25D9%258A%25D9%2588%25D9%2586%3Fnode-id%3D592-1476%26t%3DLMm7lOaQ8FM0Ksxp-1%26scaling%3Dscale-down%26page-id%3D592%253A1476%26starting-point-node-id%3D592%253A1513%26mode%3Ddesign" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- CTA Section -->
-  <section class="cta py-5 bg-gold">
+  
+  <!-- Download Section -->
+  <section class="py-5">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8 mb-4 mb-lg-0">
-          <h2 class="fw-bold text-navy mb-2">مهتم لتطبيقنا الوعد؟</h2>
-          <p class="lead text-dark mb-0">يمكنك التواصل معنا والتعرف على حلولنا المبتكرة</p>
-        </div>
-        <div class="col-lg-4 text-lg-start">
-          <a href="mailto:waqfyon@gmail.com" class="btn btn-dark btn-lg px-4 py-3">تواصل معنا<i class="fas fa-arrow-left ms-2"></i></a>
+      <div class="sketch-cta-card download-card" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0 text-center text-lg-end">
+            <h2 class="sketch-cta-title">حمل تطبيق وقفيون الآن</h2>
+            <p class="sketch-cta-text">ابدأ رحلتك الاستثمارية في عالم الأوقاف وساهم في بناء مستقبل أفضل</p>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="sketch-app-badges  row g-3">
+
+                <div class="col-sm-6">
+                  <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#appLaunchModal">
+                  <img src="assets/images/Download_on_the_App_Store_Badge_AR_RGB_blk_102417.svg" alt="تحميل من App Store">
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#appLaunchModal">
+                  <img src="assets/images/GetItOnGooglePlay_Badge_Web_color_Arabic.png" alt="تحميل من Google Play" >
+                </a>
+              </div>
+
+            
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Footer -->
-  <footer>
+  <footer class="sketch-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <h5>عن وقفيون</h5>
-          <p>نقدم خدمات استثمارية وقفية موثوقة، نساعد الأفراد والمؤسسات على تحقيق أهدافهم المجتمعية والتنموية.</p>
-        </div>
-        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-          <h5>روابط سريعة</h5>
-          <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="app.html"> جرب تطبيقنا</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h5>اتصل بنا</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-map-marker-alt me-2 text-gold"></i>صنع في جدة</li>
-            <li><i class="fas fa-envelope me-2 text-gold"></i>waqfyon@gmail.com</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom mt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="mb-0">&copy; ٢٠٢٥ وقفيون. جميع الحقوق محفوظة.</p>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <a href="index.html" class="d-inline-block mb-4">
+            <img src="assets/images/brand/logo.svg" alt="وقفيون" width="120">
+          </a>
+          <p class="sketch-footer-text">نقدم خدمات استثمارية وقفية موثوقة، نساعد الأفراد والمؤسسات على تحقيق أهدافهم المجتمعية والتنموية.</p>
+          <div class="sketch-social mt-4">
+            <a href="https://twitter.com/waqfyon" class="sketch-social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/waqfyon" class="sketch-social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/waqfyon-وقفيون" class="sketch-social-link"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+          <h5 class="sketch-footer-heading">روابط سريعة</h5>
+          <ul class="sketch-footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="features.html">المميزات</a></li>
+            <li><a href="app.html">التطبيق</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-md-4 col-lg-3">
+          <h5 class="sketch-footer-heading">تواصل معنا</h5>
+          <ul class="sketch-footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>جدة، المملكة العربية السعودية</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:waqfyon@gmail.com">waqfyon@gmail.com</a>
+            </li>
+          </ul>
+          <div class="sketch-app-badges mt-4">
+            <a href="#" class="sketch-app-badge" data-bs-toggle="modal" data-bs-target="#appLaunchModal">
+              <img src="assets/images/Download_on_the_App_Store_Badge_AR_RGB_blk_102417.svg" alt="تحميل من App Store">
+            </a>
+            <a href="#" class="sketch-app-badge" data-bs-toggle="modal" data-bs-target="#appLaunchModal">
+              <img src="assets/images/GetItOnGooglePlay_Badge_Web_color_Arabic.png" alt="تحميل من Google Play">
+            </a>
+            </div>
+            
+            <!-- Modal for App Launch Notification -->
+            <div class="modal fade" id="appLaunchModal" tabindex="-1" aria-labelledby="appLaunchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="appLaunchModalLabel">تنبيه</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+              </div>
+              <div class="modal-body text-center">
+                <i class="fas fa-info-circle fa-3x text-info mb-3"></i>
+                <p class="fs-5">التطبيق لم يتم إطلاقه بعد. سيتم إخطارك عند توفر التطبيق!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0"></div>
+
+        </div>
+      </div>
+      
+      <div class="sketch-footer-bottom">
+        <p class="sketch-copyright">© ٢٠٢٥ وقفيون. جميع الحقوق محفوظة.</p>
+        <div class="sketch-footer-legal">
+          <a href="privacy-policy.html">سياسة الخصوصية</a>
+          <a></a>
+          <a href="terms-of-service.html">شروط الخدمة</a>
+        </div>
       </div>
     </div>
+
+    <a href="#" class="sketch-back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 3.33337L8 12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M3.33333 8.00004L8 3.33337L12.6667 8.00004" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </footer>
 
   <!-- Bootstrap & JavaScript Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Rating JS -->
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom JS -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const stars = document.querySelectorAll('.feedback-card .far.fa-star');
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        disable: window.innerWidth < 768
+      });
       
-      stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-          // Reset all stars
-          stars.forEach(s => s.classList.replace('fas', 'far'));
-          
-          // Fill clicked star and all before it
-          for (let i = 0; i <= index; i++) {
-            stars[i].classList.replace('far', 'fas');
-          }
-        });
-        
-        // Hover effects
-        star.addEventListener('mouseover', () => {
-          for (let i = 0; i <= index; i++) {
-            stars[i].classList.add('text-opacity-75');
-          }
-        });
-        
-        star.addEventListener('mouseout', () => {
-          stars.forEach(s => s.classList.remove('text-opacity-75'));
-        });
+      // Header scroll effect
+      const header = document.querySelector('.navbar');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Back to top button
+      const backToTopButton = document.getElementById('backToTop');
+      
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
   </script>

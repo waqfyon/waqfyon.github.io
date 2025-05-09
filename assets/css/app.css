@@ -1,74 +1,143 @@
+.figma-embed {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.figma-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.instructions {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
 .app-prototype {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    margin-bottom: 40px;
-  }
-  
+  margin-bottom: 60px;
+}
+
+.sketch-app-screenshots {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch-app-screen {
+  width: 55%;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.screen-1 {
+  z-index: 2;
+  transform: rotate(-5deg) translateX(-20px);
+}
+
+.screen-2 {
+  z-index: 1;
+  transform: rotate(5deg) translateX(20px);
+}
+
+.app-blob {
+  width: 300px;
+  height: 300px;
+  background-color: var(--accent);
+  opacity: 0.1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: blob-animation 15s infinite alternate;
+}
+
+.download-card {
+  background-color: var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 50px;
+  color: var(--white);
+}
+
+.app-store-badge, .google-play-badge {
+  max-height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.app-store-badge:hover, .google-play-badge:hover {
+  transform: translateY(-5px);
+}
+
+.app-main-mockup {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.sketch-app-showcase {
+  position: relative;
+}
+
+@media (max-width: 991px) {
   .figma-embed {
-    width: 100%;
-    height: 700px;
-    margin: 30px 0;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    border: 1px solid rgba(0,0,0,0.1);
-    background-color: #f9f9f9;
+    height: 500px;
   }
   
-  .figma-embed iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+  .sketch-app-screenshots {
+    height: 400px;
+    margin-bottom: 30px;
   }
   
-  .instructions {
-    background-color: var(--light-gold);
-    border-right: 5px solid var(--gold);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-  }
-  
-  .instructions h3 {
-    color: var(--navy);
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-  
-  .feedback-section {
-    margin-top: 30px;
-    background-color: #f8f9fa;
-    padding: 25px;
-    border-radius: 8px;
-  }
-  
-  .feedback-card {
-    background-color: #fff;
-    border-radius: 8px;
+  .download-card {
     padding: 30px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .figma-embed {
+    height: 400px;
   }
   
-  .feedback-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  .sketch-app-screenshots {
+    height: 350px;
   }
   
-  @media (max-width: 767.98px) {
-    .figma-embed {
-      height: 500px;
-    }
-    
-    .feedback-card {
-      margin-bottom: 20px;
-    }
+  .sketch-app-screen {
+    width: 65%;
+  }
+}
+
+@media (max-width: 576px) {
+  .figma-embed {
+    height: 350px;
   }
   
-  @media (max-width: 575.98px) {
-    .figma-embed {
-      height: 400px;
-    }
+  .sketch-app-screenshots {
+    height: 300px;
   }
+  
+  .screen-1 {
+    transform: rotate(-3deg) translateX(-10px);
+  }
+  
+  .screen-2 {
+    transform: rotate(3deg) translateX(10px);
+  }
+  
+  .download-card {
+    padding: 25px;
+  }
+}
+
