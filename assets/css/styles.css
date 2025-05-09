@@ -250,6 +250,18 @@
       
     }
   }
+
+  @media (max-width: 990px) {
+    .sketch-hero-image img {
+      height: 20rem;
+      width: auto;
+      object-fit: cover;
+      object-position: bottom center;
+      z-index: 1;
+      overflow: visible !important;
+      content: url(../images/hero-mockup-mobile.png);
+    }
+  }
   
   .sketch-blob {
     position: absolute;
